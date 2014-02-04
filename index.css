@@ -1,0 +1,110 @@
+body {
+    color: #ffffff;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-color: #fff;
+    color: #fff;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.btn:hover{
+    padding-right:3em;
+    background:#ffffff;
+}
+
+.btn::after {
+    content: '';
+    width: 7px;
+    height: 10px;
+    display: inline-block;
+    -webkit-background-size: 7px 10px;
+    -moz-background-size: 7px 10px;
+    -o-background-size: 7px 10px;
+    background-size: 7px 10px;
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.btn::after{background:none !important}}
+
+
+.btn:hover::after{opacity:1}
+
+.col-md-8 {
+    bottom: 0;
+}
+
+.col-md-8 img {
+    bottom:0;
+    margin-left:25%;
+    right:25%;
+    height: auto;
+}
+
+h1 { 
+    font-size: 5.5em; 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #428bca;
+    text-decoration:none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    background-color:#e5e5e5;
+}
+
+.collapse navbar-collapse, .nav navbar-nav, .navbar-header {
+    background-color: #ffffff;
+}
+
+.navbar, .navbar-fixed-top, .navbar-inverse .navbar-brand{
+    border:none;
+    color: #ffffff;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #e5e5e5;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    height: 3em;
+    margin-top: -3em;
+    font-size: 12px;
+}
+
+
+@font-face {
+    font-family: logo;
+    src: url(icomoon-fonts/logo.ttf);
+}

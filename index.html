@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+    
+
+    <head>
+        <meta charset="UTF-8">
+        <title>BuySomething</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="icon" type="image/ico" href="favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="grid.css">  
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+          
+            
+        //<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+       
+    </head>
+    
+    <body>    
+        <script>
+                    // Javascript file overriding CSS style
+                    // DO NOT REUSE ID names multiple times, class is okay
+                    
+                    
+                    $(document).ready(function() {
+                        reload();
+                        
+                        $( ".btn" ).click(function( event ) {
+                            reload();
+                            event.preventDefault();
+                        });
+                    });    
+                        
+                    function reload() {
+                        var randomNum = Math.floor((Math.random()*12));                    
+                        MultiArray = new Array(12)
+    
+                        MultiArray [0] = new Array(6)
+                        MultiArray [0][0] = "#000000" //black
+                        MultiArray [0][1] = "img/macpro-inside.jpg"
+                        MultiArray [0][2] = 529
+                        MultiArray [0][3] = "MacPro"
+                        MultiArray [0][4] = "FROM $2,999"
+                        MultiArray [0][5] = "http://store.apple.com/us_smb_78313/buy-mac/mac-pro"
+                        
+                        MultiArray [1] = new Array(6)
+                        MultiArray [1][0] = "#ebecee"; //ipad grey
+                        MultiArray [1][1] = "img/ipad.jpg"
+                        MultiArray [1][3] = "iPad Air"
+                        MultiArray [1][4] = "FROM $499"
+                        MultiArray [1][5] = "http://store.apple.com/us/buy-ipad/ipad-air"
+                        
+                        MultiArray [2] = new Array(6)
+                        MultiArray [2][0] = "#ff8181"; //pink
+                        MultiArray [2][1] = "img/iphone-pink.jpg"
+                        MultiArray [2][3] = "iPhone 5C"
+                        MultiArray [2][4] = "FROM $99"
+                        MultiArray [2][5] = "http://store.apple.com/us_smb_78313/buy-iphone/iphone5c"
+                        
+                        MultiArray [3] = new Array(6)
+                        MultiArray [3][0] = "#efdfcf"; // iphone gold
+                        MultiArray [3][1] = "img/iphone5s.png"
+                        MultiArray [3][2] = 580
+                        MultiArray [3][3] = "iPhone 5S"
+                        MultiArray [3][4] = "FROM $199"
+                        MultiArray [3][5] = "http://store.apple.com/us_smb_78313/buy-iphone/iphone5s"
+                        
+                        MultiArray [4] = new Array(6)
+                        MultiArray [4][0] = "#1c2f33"; //black
+                        MultiArray [4][1] = "img/fitbit4.png"
+                        MultiArray [4][2] = 580
+                        MultiArray [4][3] = "FitBit Force"
+                        MultiArray [4][4] = "FROM $129"
+                        MultiArray [4][5] = "http://www.fitbit.com/"
+                        
+                        
+                        MultiArray [5] = new Array(6)
+                        MultiArray [5][0] = "#000000"; //black
+                        MultiArray [5][1] = "img/razerblade.png"
+                        MultiArray [5][2] = 580
+                        MultiArray [5][3] = "Razer Blade Pro"
+                        MultiArray [5][4] = "FROM $2,499"
+                        MultiArray [5][5] = "http://www.razerzone.com/gaming-systems/razer-blade-pro/"
+                        MultiArray [6] = new Array(6)
+                        MultiArray [6][0] = "#000000"; //black
+                        MultiArray [6][1] = "img/xbox-one2.jpg"
+                        MultiArray [6][2] = 580
+                        MultiArray [6][3] = "Xbox One"
+                        MultiArray [6][4] = "FROM $499"
+                        MultiArray [6][5] = "http://www.amazon.com/b/?ie=UTF8&node=6469269011"
+                        
+                        MultiArray [7] = new Array(6)
+                        MultiArray [7][0] = "#000000"; //black
+                        MultiArray [7][1] = "img/playstation4.png"
+                        MultiArray [7][2] = 580
+                        MultiArray [7][3] = "PlayStation 4"
+                        MultiArray [7][4] = "FROM $569"
+                        MultiArray [7][5] = "http://www.bestbuy.com/PS4"
+                        
+                        MultiArray [8] = new Array(6)
+                        MultiArray [8][0] = "#dfdfe1"; //grey
+                        MultiArray [8][1] = "img/boot.jpg"
+                        MultiArray [8][2] = 580
+                        MultiArray [8][3] = "Cole Haan Tall Boots - Wesley"
+                        MultiArray [8][4] = "FROM $238"
+                        MultiArray [8][5] = "http://www1.bloomingdales.com/shop/product/cole-haan-tall-boots-wesley?ID=850490"
+                        
+                        MultiArray [9] = new Array(6)
+                        MultiArray [9][0] = "#d8d8da"; //grey
+                        MultiArray [9][1] = "img/handbag2.jpg"
+                        MultiArray [9][2] = 580
+                        MultiArray [9][3] = "Tory Burch Satchel"
+                        MultiArray [9][4] = "FROM $550"
+                        MultiArray [9][5] = "http://www.toryburch.com/robinson-dome-satchel-%7C-luggage-%7C-201/887712211913.html"
+                        
+                        MultiArray [10] = new Array(6)
+                        MultiArray [10][0] = "#81d8d0"; //green
+                        MultiArray [10][1] = "img/sunglasses.png"
+                        MultiArray [10][2] = 580
+                        MultiArray [10][3] = "Tiffany Garden Sunglasses"
+                        MultiArray [10][4] = "FROM $480"
+                        MultiArray [10][5] = "http://www.tiffany.com/shopping/CategoryBrowse.aspx?cid=476276"
+                        
+                        MultiArray [11] = new Array(6)
+                        MultiArray [11][0] = "#BACECD"; //light green
+                        MultiArray [11][1] = "img/ring.png"
+                        MultiArray [11][2] = 580
+                        MultiArray [11][3] = "Engagement Rings"
+                        MultiArray [11][4] = "FROM $2,170"
+                        MultiArray [11][5] = "http://www.cumberlanddiamond.com/88/engagement-rings.html"
+                        
+
+                        var colorRand = MultiArray [randomNum][0];
+                        var imageURL = MultiArray [randomNum][1];
+                        var introHeader = MultiArray [randomNum][3];
+                        var price = MultiArray [randomNum][4];
+                        var link = MultiArray [randomNum][5];
+                        $( "body" ).css("background-color", colorRand);
+                        $( ".navbar-fixed-top" ).css("background-color", colorRand);
+                        $(".col-md-8").html('<img src="'+ imageURL  +' " width= MultiArray [randomNum][2] />').css("display", "none");
+                        $(".col-md-8").fadeIn(1000);
+                        $( ".intro" ).text( introHeader ).css("display", "none").fadeIn(2500);
+                        $( ".price" ).text( price ).css("display", "none").fadeIn(3500);
+                        $("a").attr("href", link)
+                        // Hover on .btn button
+                        $(".btn").mouseenter(function(){
+                            $(".btn").css("background", "#ffffff");
+                            $(".btn").css("color", colorRand);
+                        }); 
+                        
+                        // Move out on .btn button
+                        $(".btn").mouseout(function(){
+                            $(".btn").css("background", colorRand);
+                            $(".btn").css("color", "#ffffff");
+                        });                         
+                    }   
+                </script>        
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                  <a class="navbar-brand" href="#" style="vertical-align:middle;"><img src="logo.png" style="width:40px;">  BUYSOMETHING</a>
+            </div>    
+        </div>        
+            
+        <br/>
+        <br/>
+        <div class="container">    
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="intro"></h1>
+                <a href="index.html" target="_blank"><h3 class="price"></h3></a>
+                <br>
+                <div class="btn">Browse more things</div>
+                
+            </div>
+                
+            <a href="index.html" target="_blank"><div class="col-md-8"></div></a>
+            
+        </div><!-- END ROW -->     
+        </div>
+        <div class="container">  
+            <div id="footer">&copy;PARTIAL COPYRIGHT 2014 CHIP. MADE WITH LOVE IN SEATTLE. <br>SPEND SOME MONEY, HELP THE ECONOMY.</div>
+        </div>    
+    </body>    
+    
+</html>    
